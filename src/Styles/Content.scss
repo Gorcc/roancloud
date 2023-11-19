@@ -1,0 +1,101 @@
+@import url(./variables.css);
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+
+
+}
+
+.content-left {
+  text-align: left;
+  width: 50%;
+  height: 50%;
+  margin: 0 100px;
+  
+}
+
+.content-right{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+.content-carousel {
+  margin-left: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.content-container img {
+  margin-top: 12px;
+  width: 300px;
+  height: 300px;
+}
+
+.content-container button{
+  background-color: rgb(2, 0, 0) !important;
+  transition: 0.3s all ease !important;
+  
+}
+
+
+.content-container button[aria-current="true"]
+{
+  background-color: var(--primary-blue) !important;
+  width: 50px;
+}
+.content-container .carousel-control-prev{
+  display: none;
+  background-color: black;
+}
+.content-container .carousel-control-next{
+  display: none;
+  background-color: black;
+}
+
+
+.content-container h5{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+
+}
+
+.content-container h5 span{
+  color: var(--primary-blue);
+  margin-right: 8px;
+  font-size: 10px;
+  
+}
+
+.welcome-border{
+  margin-bottom: 12px;
+  width: 16%;
+  border-bottom: 2px solid var(--primary-blue);
+  margin-left: 16px;
+}
+
+
+@media screen and (max-width: 860px) {
+.content-container{
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.content-container img{
+  display: none;
+}
+
+.content-left{
+  width: 80%;
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+  height: 85%;
+}
+
+
+   }
