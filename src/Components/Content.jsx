@@ -2,6 +2,9 @@ import React from "react";
 import Logo from "../Styles/logo.svg";
 import Carousel from "react-bootstrap/Carousel";
 import "../Styles/Content.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEbay,faAmazon,faEtsy } from "@fortawesome/free-brands-svg-icons";
+
 const Content = () => {
   return (
     <div className="content-container">
@@ -9,7 +12,7 @@ const Content = () => {
         <div className="content-welcome">
           <h5>
             {" "}
-            <span>⬤</span>Welcome to Roan Cloud
+            <span>&nbsp;</span>Welcome to Roan Cloud
           </h5>
           <div className="welcome-border"></div>
         </div>
@@ -17,7 +20,7 @@ const Content = () => {
         <Carousel slide className="content-carousel">
           <Carousel.Item>
             <h3>
-              <strong> Wholesale </strong>
+              <strong> Wholesale </strong> <FontAwesomeIcon icon={faEbay} size="xl" style={{ color: "var(--primary-blue)" }}/>
             </h3>
             <p>
               Wholesale is a pivotal aspect of our business, allowing us to buy
@@ -28,7 +31,7 @@ const Content = () => {
           </Carousel.Item>
           <Carousel.Item>
             <h3>
-              <strong>Good Prices</strong>
+              <strong>Good Prices</strong>  <FontAwesomeIcon icon={faAmazon} style={{ color: "var(--primary-blue)" }} />
             </h3>
             <p>
               Our commitment to offering competitive prices ensures that our
@@ -39,7 +42,7 @@ const Content = () => {
           </Carousel.Item>
           <Carousel.Item>
             <h3>
-              <strong>Greatest Products</strong>
+              <strong>Greatest Products</strong>  <FontAwesomeIcon icon={faEtsy} style={{ color: "var(--primary-blue)" }}/>
             </h3>
             <p>
               Our selection is curated to offer the finest quality items,
